@@ -74,7 +74,7 @@ function Captcha(elementId) {
     var quantity = 0;
     finalArray = [];
 
-    while (finalArray.length < 4) {
+    while (finalArray.length < imageQuantity) {
       var index = Math.floor(Math.random() * arrayImage.length);
 
       if (!finalArray.find((item) => item.imageName === arrayImage[index].imageName)) {
