@@ -1,0 +1,58 @@
+/*To center content*/
+#captcha-container {
+  text-align: center;
+}
+
+/*To center table*/
+.captcha-table {
+  margin: auto;
+}
+
+/*Image position*/
+.custom-control.image-checkbox {
+  position: relative;
+  padding-left: 0;
+}
+
+/*Original opacity*/
+.custom-control.image-checkbox .custom-control-input:checked ~ 
+.custom-control-label:after, .custom-control.image-checkbox .custom-control-input:checked ~ 
+.custom-control-label:before {
+  opacity: 1;
+}
+
+/*Change cursor*/
+.custom-control.image-checkbox label {
+  cursor: pointer;
+}
+
+/*RadioButton color*/
+.custom-control.image-checkbox label:before {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+/*RadioButton effect*/
+.custom-control.image-checkbox label:after, .custom-control.image-checkbox label:before {
+  transition: opacity .3s ease;
+  opacity: 0;
+  left: .25rem;
+}
+
+/*Hover opacity*/
+.custom-control.image-checkbox label:focus, .custom-control.image-checkbox label:hover {
+  opacity: .8;
+}
+
+/*Image style*/
+.custom-control.image-checkbox label img {
+  border-radius: 2.5px;
+  width: 145px;
+  height: 120px;
+}
+
+/*Question style*/
+.captcha-question {
+  font-weight: bold;
+  font-size: 1rem;
+}
