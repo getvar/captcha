@@ -1,5 +1,5 @@
 //Referenciamos el js del captcha
-document.write('<script src="js/captcha-component.js" type="text/javascript"></script>');
+document.write('<script src="js/captcha-component.js?v=1" type="text/javascript"></script>');
 
 document.addEventListener("DOMContentLoaded", function(){
     validateAndCreateCaptcha();
