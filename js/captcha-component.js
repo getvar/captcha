@@ -91,16 +91,15 @@ function Captcha(elementId) {
         "<input " +
         'type="radio" ' +
         'class="custom-control-input" ' +
-        'id="ck2_' +
+        'id="rbImage_' +
         i +
         '" ' +
-        'name="ck2" ' +
+        'name="rbImage" ' +
         'value="' +
         finalArray[i].imageName +
         '" ' +
-        // 'onclick="validateSelectedImage()" ' +
         "/>" +
-        '<label class="custom-control-label" for="ck2_' +
+        '<label class="custom-control-label" for="rbImage_' +
         i +
         '">' +
         "<img " +
@@ -140,7 +139,7 @@ function validateSelectedImage() {
   var selectedImage = "";
   var response = false;
 
-  document.getElementsByName("ck2").forEach((val) => {
+  document.getElementsByName("rbImage").forEach((val) => {
     if (val.checked) {
       selectedImage = val.value;
     }
