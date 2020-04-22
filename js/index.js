@@ -1,5 +1,7 @@
-document.write('<script src="js/plgCaptcha.js" type="text/javascript"></script>');
+document.write('<script src="js/captcha-component.js?v=1" type="text/javascript"></script>');
 
 document.addEventListener("DOMContentLoaded", function(){
-    drawCaptcha('captcha-viewer');
+    if (!!document.getElementById('captcha-viewer')) {
+        new Captcha('captcha-viewer');
+    }
 });
